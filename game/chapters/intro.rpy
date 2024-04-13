@@ -51,8 +51,8 @@ label prologue:
             jump serenquestions2
         "What's up with your friend?":
             s "Her name is Cyra. I met her in Summoning class at college." 
-            s "She's a genius, even for a cyborg. It's like her biological brain has fully merged with her microchip."
-            s "She had her implant put in when she was a baby, her parents didn't wait till school age like most people do."
+            s "She's a genius, even for a cyborg. Her biological brain has merged with her microchip, I swear."
+            s "She had her implant put in when she was just a baby. Her parents didn't wait till school age like most people do."
             s "She's so deep in the digital world it's like she's become an AI Agent herself."
     
     menu serenquestions3:
@@ -62,14 +62,14 @@ label prologue:
             s "It's how I built my successful crypto trading firm actually."
             jump serenquestions3
         "Tell me more about summoning.":
-            s "Right, yeah I know not many cyborgs know how to do it."
-            s "Most cyborgs are basically humans with ancient smart devices, but instead it's in their brain microchip. They're connected all the time with instant access."
-            s "But they can't process all the data at once, they need to actively search for a topic and interpret it in sequence."
-            s "Whilst Summoners have learned how to become one with the machine, mastery of tech entities."
-            s "Summoners are cyborgs that can control AI agents to do as they please. They can summon physical bots or drones to do manual labor, summon holograms of experts to give advice, and summon new data structures to hack into systems."
+            $ serenquestion_summoner = True
+            s "Right, yeah I know not many cyborgs know how to summon. Cyborgs are just humans connected to the internet all the time via their microchips."
+            s "Summoners have learned how to become one with their microchips. They can manipulate data and summon AI agents to do as they please."
+            s "They can summon physical bots or drones to do manual labor, summon holograms of experts to give advice, and summon new data structures to hack into systems."
             jump serenquestions3
-        "Couldn't summoners take over the world then?":
-            s "Well, there are limits to their abilities. And of course some bots and data sources have high level security so they can't be controlled."
+        "Couldn't summoners take over the world then?" if serenquestion_summoner == True:
+            s "Well, there are limits to their abilities depending on talent."
+            s "And of course some bots and data sources have high level security so they can't be controlled."
             s "But it's true that in society summoners are the top, then it's cyborgs, then AI agents, and then it's humans."
             jump serenquestions3
         "So Cyra needs a digital-detox?":
@@ -78,11 +78,25 @@ label prologue:
             s "But she's insisting that there's no point and she can just dial in."
     
     menu serenquestions4:
+        "You're turning 30?":
+            s "Yeah... don't remind me."
+            s "Although I know it's still relatively very young, I still can't help but face that milestone and say goodbye to my twenties."
+            jump serenquestions4
         "You want me to persuade Cyra to go to a birthday party?":
             s "Yes, in real life."
             s "I know it sounds mundane, but it would mean so much to me. I miss her and I'd like her to meet my new partner."
-            s ""
-        "You're turning 30?":
-            s "Yeah... don't remind me."
-            s "Although I know it's still relatively very young, I still can't help but face that milestone."
+            s "Will you help me out?"
 
+    menu:
+        "Of course happy to help.":
+            s "THANK YOU SO MUCH."
+            s "Here's her address."
+            s "She'll know you're coming, but don't worry."
+            s "Just use your skills to persuade her!"
+            jump chapter1
+        "She seems like a lost cause, but I'll try.":
+            s "Haha thanks. I know there's a human in there somewhere."
+            s "Here's her address."
+            s "She'll know you're coming, but don't worry."
+            s "Just use your skills to persuade her!"
+            jump chapter1
