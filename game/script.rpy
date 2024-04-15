@@ -3,7 +3,7 @@
     $ player = player.strip()
     if player == "":
         $ player = "Traynor"
-    jump chapter1
+    jump intro
 
 label story:
     call intro
