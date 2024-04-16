@@ -10,6 +10,7 @@ label intro:
     n "Time to go to your coffee meetup for cyborgs who want to disconnect."
 
 label prologue:
+    play music maintheme
     scene cafe with dissolve
     n "It's a quiet day. Fewer attendees have shown up than expected."
     n "You see a well-dressed young lady cyborg catch your eye. She smiles and walks over to you."

@@ -1,6 +1,6 @@
 label chapter2:
     scene livingroom with dissolve
-    show cyra_neutral with dissolve
+    show cyra with dissolve
     n "After finishing your drink, you feel stuck on how to inspire Cyra go out in person."
     n "Perhaps you can use your charisma and just get to know her better?"
     menu cyraquestionschap2:
@@ -57,7 +57,8 @@ label chapter2b:
             c "There's no need for that. You do realize I'm a summoner right?"
 
     n "Cyra turns her head, looks towards the her side." 
-    show bot at right with flash    
+    show artist at right with flash
+    play sound botspeak
     c "And here's an Agent to show and tell us all about human art."
     pause 1.0
     a "Greetings Cyra and [player]. I am here to provide some artistic inspiration."
@@ -72,7 +73,8 @@ label chapter2b:
             a "I am in a holographic form, although if Cyra wishes I could also embody one of her bots."
     c "Show [player] some artwork."
     a "Of course!" with flash
-    show bot with dissolve
+    play sound botspeak
+    show artist_art at right with dissolve
     menu:
         a "What do you think?"
         "That is beautiful!":

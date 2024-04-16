@@ -6,6 +6,6 @@
     jump intro
 
 label story:
-    call intro
+    call intro from _call_intro
 
     return

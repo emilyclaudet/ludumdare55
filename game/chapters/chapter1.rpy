@@ -5,6 +5,7 @@ label chapter1:
     scene door with dissolve
     n "You approach the door only to find it's being guarded."
     show bot with dissolve
+    play sound botspeak
     b "Good morning [player]."
     b "Welcome to the AI Agents Realm. Cyra's expecting you."
     menu botdog1:
@@ -32,11 +33,12 @@ label chapter1:
 label chapter1a:
     scene livingroom with dissolve
     show bot with dissolve
+    play sound botspeak
     b "Please make yourself at home."
     n "You are tempted to sit on the very comfy looking couch, but first you look for Cyra."
     n "You realize she's sitting on the floor on a plush carpet, looking deep in thought."
     hide bot with dissolve
-    show cyra_neutral with dissolve
+    show cyra with dissolve
     n "You feel the intensity of signals and data processors as you stare at Cyra."
     menu:
         "Hi Cyra, nice to meet you!":
@@ -48,6 +50,7 @@ label chapter1a:
 
 label chapter1b:
     show bot at left with dissolve
+    play sound botspeak
     b "There is no need to disturb her directly."
     b "She will reply to your queries through us, her agents."
     menu:
@@ -68,6 +71,7 @@ label chapter1b:
             jump chapter1bmenu
     b "Cyra will attend the party remotely."
     show drone at topright with dissolve
+    play sound botspeak
     d "That's right! She can dial in and view it in VR."
     d "Seren has great camera and good streaming, we know it will be high quality enough for Cyra."
     d "What's the point in going?"
@@ -86,7 +90,7 @@ label chapter1b:
     n "You immediately turn to look deeply into Cyra's sparkling eyes."
     hide bot with dissolve
     hide drone with dissolve
-    show cyra_neutral with dissolve 
+    show cyra with dissolve 
     c "I know it's hard for you to understand why I don't feel the need to be there in person."
     c "It seems your microchip really has malfunctioned and you are fully human now. Is that correct?"
     menu:
@@ -120,6 +124,7 @@ label chapter1b:
             c "There's no need for that. We can get some delivered."
             c "Do you want a coffee? I prefer matcha."
             show drone at topright with dissolve
+            play sound botspeak
             n "The drone appears suddenely, and the window slides open."
             show drone at offscreenright with moveinright
         "Suggest to go for a walk in the park.":

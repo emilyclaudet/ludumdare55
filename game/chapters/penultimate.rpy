@@ -16,7 +16,7 @@ label penulitmate:
             c "My last grandparent passed away 1 year ago."
             $ cyradeepquestion1 = True
             jump cyradeepquestions
-        "Sorry to hear about your grandmoth. How do you feel?" if cyradeepquestion1 == True:
+        "Sorry to hear about your grandmother. How do you feel?" if cyradeepquestion1 == True:
             c "It is sad but it is also inevitable."
             c "Human bodies die. We can preserve the data from their microchips if they are cyborgs though."
             c "Despite centries of research, humanity still has not found the way to stop death."
@@ -54,8 +54,15 @@ label penulitmate:
             c "And my grandmother was a nice person to talk to..."
 
 label grandmother:
-    n "A hologram appears before you."
+    n "A hologram is fading into presence..."
     n "You see a silouette of what looks like an elderly lady with wings..."
     n "Cyra's gaze turns and there is a twinkle of emotion in her eyes."
-    scene black
+    scene black with dissolve
     n "To be continued...."
+
+    #TO DO
+    # Add asset for the art agent
+    # Add asset for Cyra from Marian
+    # Add sounds
+    # Add animation for the bots, just bobbing up and down maybe?
+    # Add asset for Seren?
